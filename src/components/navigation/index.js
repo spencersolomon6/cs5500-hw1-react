@@ -32,8 +32,8 @@ function Index() {
       })
       }
       </ul>
-     <a href="#" class="mt-3 btn btn-lg btn-primary rounded-pill w-100 fw-bold text-white">
-      Tuit</a>
+     <button href="#" class="mt-3 btn btn-lg btn-primary rounded-pill w-100 fw-bold text-white">
+      Tuit</button>
     </div>
   );
 };
