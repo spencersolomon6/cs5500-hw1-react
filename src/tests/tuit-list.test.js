@@ -8,8 +8,8 @@ jest.mock('axios');
 
 const MOCKED_USERS = [
   {username: 'alice', password: 'alice123', email: 'alice@gmail.com', _id: '123'}, 
-  {username: 'alice', password: 'alice123', email: 'alice@gmail.com', _id: '234'},
-  {username: 'alice', password: 'alice123', email: 'alice@gmail.com', _id: '345'}
+  {username: 'bob', password: 'bob234', email: 'bob@gmail.com', _id: '234'},
+  {username: 'charlie', password: 'charlie123', email: 'charlie@gmail.com', _id: '345'}
 ];
 
 const MOCKED_TUITS = [
@@ -35,7 +35,7 @@ test('tuit list renders async', async () => {
     </HashRouter>);
   const linkElement = screen.getByText(/This is a my first tuit. Hi!/i);
   expect(linkElement).toBeInTheDocument();
-})
+});
 
 test('tuit list renders mocked', async () => {
   axios.get.mockImplementation(() =>
