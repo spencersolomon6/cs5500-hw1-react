@@ -2,8 +2,8 @@ import React from "react";
 import './tuits.css';
 import Tuit from "./tuit";
 
-function Tuits({tuits = [], deleteTuit}) {
-    return (
+function Tuits({tuits = [], deleteTuit, refreshTuits}) {
+  return (
     <div>
       <ul className="ttr-tuits list-group">
         {
