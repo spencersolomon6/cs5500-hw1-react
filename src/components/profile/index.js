@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react/cjs/react.production.min";
 import { useEffect } from "react/cjs/react.production.min";
 import { Route, Routes } from "react-router-dom";
+import MyDislikes from "./my-dislikes";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -39,6 +40,8 @@ const Profile = () => {
                element={<Media/>}/>
         <Route path="/mylikes"
                element={<MyLikes/>}/>
+        <Route path="/mydislikes"
+              element={MyDislikes}/>
       </Routes>  
     </div>
   );
