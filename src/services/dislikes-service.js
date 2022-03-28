@@ -10,3 +10,7 @@ const api = axios.create({
 export const userTogglesTuitDislikes = (uid, tid) =>
     api.put(`${USERS_API}/${uid}/dislikes/${tid}`)
         .then(response => response.data);
+
+export const findAllTuitsDislikedByUser = (userId) =>
+    api.get(`${USERS_API}/${userId}/dislikes`)
+        .then(response => response.data);
