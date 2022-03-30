@@ -8,7 +8,7 @@ export const Login = () => {
   const login = () =>
     service.login(loginUser)
       .then((user) => navigate('/profile/mytuits'))
-      .catch(e => alert(e));
+      .catch(navigate('/signup'));
   return (
     <div>
       <h1>Login</h1>
