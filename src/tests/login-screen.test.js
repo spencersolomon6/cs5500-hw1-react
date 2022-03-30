@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-render-in-setup */
 /* eslint-disable testing-library/no-unnecessary-act */
 import axios from 'axios';
 import {
