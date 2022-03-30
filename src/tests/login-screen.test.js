@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-unnecessary-act */
 import axios from 'axios';
 import {
   createUser,
@@ -77,7 +78,7 @@ describe('www', () => {
     await act(async () => {
       // get all the links
       // const a = document.querySelectorAll("a#Login");
-      const a = await screen.getByText(/Login/i);
+      const a = screen.getByText(/Login/i);
       // console.log(a);
       // click on the nth link
       fireEvent.click(a);
