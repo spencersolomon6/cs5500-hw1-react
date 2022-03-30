@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import * as service from "./tuits-service";
+import * as service from "../../services/tuits-service";
 import Tuits from "./tuits";
 
 const MyTuits = () => {
