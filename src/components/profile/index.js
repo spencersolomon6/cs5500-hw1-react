@@ -1,4 +1,4 @@
-import * as service from "./auth-service"
+import * as service from "../../services/auth-service";
 import MyTuits from "./my-tuits";
 import TuitsAndReplies from './tuits-and-replies';
 import Media from './media';

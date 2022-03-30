@@ -1,6 +1,5 @@
 import {useState} from "react";
-import * as service
-         from "../../services/auth-service";
+import * as service from "../../services/auth-service";
 import {useNavigate} from "react-router-dom";
 
 const Signup = () => {
