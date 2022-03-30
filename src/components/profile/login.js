@@ -4,11 +4,11 @@ import * as service from "../../services/auth-service";
 
 export const Login = () => {
   const [loginUser, setLoginUser] = useState({});
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const login = () =>
     service.login(loginUser)
       .then((user) => navigate('/profile/mytuits'))
-      .catch(navigate('/signup'));
+      .catch(e => navigate('/profile/signup'));
   return (
     <div>
       <h1>Login</h1>
