@@ -12,14 +12,17 @@ import { Route, Routes } from "react-router-dom";
 const Profile = () => {
   const navigate = useNavigate();
   const [profile, setProfile] = useState({});
-  useEffect(async () => {
-      try {
-        const user = await service.profile();
-        setProfile(user);
-      } catch (e) {
-        navigate('/login');
+  useEffect(() => {
+      async function setUserProfile() {
+        try {
+          const user = await service.profile();
+          setProfile(user);
+        } catch (e) {
+          navigate('/login');
+        }
       }
-  }, []);
+      setUserProfile();
+  });
   const logout = () => {
     service.logout()
       .then(() => navigate('/login'));

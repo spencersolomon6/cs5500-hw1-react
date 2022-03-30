@@ -35,8 +35,8 @@ function Navigation() {
       })
       }
       </ul>
-     <a href="#" className="mt-3 btn btn-lg btn-primary rounded-pill w-100 fw-bold text-white">
-      Tuit</a>
+     <button href="#" className="mt-3 btn btn-lg btn-primary rounded-pill w-100 fw-bold text-white">
+      Tuit</button>
     </div>
   );
 };

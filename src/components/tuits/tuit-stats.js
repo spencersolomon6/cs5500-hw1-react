@@ -1,5 +1,4 @@
 import React from "react";
-import Tuits from ".";
 
 const TuitStats = ({tuit, likeTuit, dislikeTuit}) => {
     return (

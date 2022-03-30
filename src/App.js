@@ -1,5 +1,4 @@
 import React from "react";
-import logo from './logo.svg';
 import './styles.css';
 // import Navigation from "./components/navigation";
 // import Tuits from "./components/tuits";

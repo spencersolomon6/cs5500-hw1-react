@@ -26,7 +26,7 @@ function WhatsHappening() {
            </div>
            <div>
             <img src={`../images/${wh['user-logo']}`}
-                 className="ttr-rounded-15px ttr-user-logo"/>
+                 className="ttr-rounded-15px ttr-user-logo" alt="what's happening"/>
            </div>
           </div>
        );
