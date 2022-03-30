@@ -1,5 +1,5 @@
-import Tuits from "../tuits";
-import * as service from "./likes-service";
+import Tuits from "../tuits/index";
+import * as service from "../../services/likes-service";
 import {useEffect, useState} from "react";
 
 const MyLikes = () => {

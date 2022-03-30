@@ -2,12 +2,12 @@ import * as service from "../../services/auth-service";
 import MyTuits from "./my-tuits";
 import TuitsAndReplies from './tuits-and-replies';
 import Media from './media';
-import MyLikes from './my-likes'
+import MyLikes from './my-likes';
+import MyDislikes from "./my-dislikes";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react/cjs/react.production.min";
 import { useEffect } from "react/cjs/react.production.min";
 import { Route, Routes } from "react-router-dom";
-import MyDislikes from "./my-dislikes";
 
 const Profile = () => {
   const navigate = useNavigate();
